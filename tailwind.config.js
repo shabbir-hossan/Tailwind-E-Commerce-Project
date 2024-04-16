@@ -17,6 +17,9 @@ module.exports = {
         poppins: 'Poppins, sans-serif',
         roboto: 'Roboto, sans-serif',
       },
+      colors: {
+        primary: '#fd3d57',
+      },
     },
   },
   plugins: [],
