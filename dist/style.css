@@ -613,6 +613,10 @@ h1,
   position: relative;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .-right-2{
   right: -0.5rem;
 }
@@ -650,6 +654,10 @@ h1,
   margin-bottom: 1rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -670,12 +678,20 @@ h1,
   display: grid;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-5{
   height: 1.25rem;
 }
 
-.h-12{
-  height: 3rem;
+.w-10\/12{
+  width: 83.333333%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-32{
@@ -688,18 +704,6 @@ h1,
 
 .w-full{
   width: 100%;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-10\/12{
-  width: 83.333333%;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .max-w-xl{
@@ -730,12 +734,16 @@ h1,
   justify-content: space-between;
 }
 
-.gap-6{
-  gap: 1.5rem;
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -763,6 +771,10 @@ h1,
 .divide-gray-200 > :not([hidden]) ~ :not([hidden]){
   --tw-divide-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-divide-opacity));
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-full{
@@ -800,6 +812,11 @@ h1,
   border-color: rgb(253 61 87 / var(--tw-border-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -813,6 +830,10 @@ h1,
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-40{
+  --tw-bg-opacity: 0.4;
 }
 
 .bg-cover{
@@ -832,9 +853,9 @@ h1,
      object-fit: contain;
 }
 
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-6{
@@ -867,11 +888,6 @@ h1,
   padding-bottom: 1rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -889,9 +905,18 @@ h1,
   text-align: center;
 }
 
+.font-roboto{
+  font-family: Roboto, sans-serif;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-6xl{
@@ -909,6 +934,11 @@ h1,
   line-height: 1.25rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
@@ -916,6 +946,10 @@ h1,
 
 .font-medium{
   font-weight: 500;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .capitalize{
@@ -936,6 +970,11 @@ h1,
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -954,11 +993,6 @@ h1,
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-500{
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1019,6 +1053,10 @@ h1,
 
 .group:hover .group-hover\:visible{
   visibility: visible;
+}
+
+.group:hover .group-hover\:bg-opacity-60{
+  --tw-bg-opacity: 0.6;
 }
 
 .group:hover .group-hover\:opacity-100{
