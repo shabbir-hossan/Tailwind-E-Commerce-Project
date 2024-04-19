@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind E-Commerce Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awason cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="py-4 shadow-sm bg-white">
+      <!-- container start -->
+      <div class="container flex items-center justify-between">
+        <!-- logo -->
+        <img src="./assets/logo.svg" alt="Logos From" class="w-32" />
+        <!-- Seacrchbar -->
+        <div class="w-full max-w-xl relative flex">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            placeholder="Search"
+          />
+          <button
+            class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition"
+          >
+            Search
+          </button>
+        </div>
+        <!-- Icons -->
+        <div class="flex items-center space-x-4">
+          <a
+            href=""
+            class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wist List</div>
+            <span
+              class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-w text-white text-xs"
+              >16</span
+            >
+          </a>
+
+          <a
+            href=""
+            class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Carts</div>
+            <span
+              class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-w text-white text-xs"
+              >5</span
+            >
+          </a>
+
+          <a
+            href=""
+            class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Accounts</div>
+          </a>
+        </div>
+      </div>
+      <!-- container end -->
+    </header>
+    <!-- Header end -->
+
+    <!-- navbar start -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- all category -->
+        <div
+          class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group"
+        >
+          <span class="text-white">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span class="capitalize ml-2 text-white">All Categories</span>
+          <div
+            class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-200 divide-dashed opacity-0 group-hover:opacity-100 transition duration-500 invisible group-hover:visible"
+          >
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <img
+                src="./assets/icons/bed.svg"
+                alt=""
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <img
+                src="./assets/icons/sofa.svg"
+                alt=""
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <img
+                src="./assets/icons/office.svg"
+                alt=""
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 text-gray-600 text-sm">Office</span>
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <img
+                src="./assets/icons/outdoor-cafe.svg"
+                alt=""
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <img
+                src="./assets/icons/bed-2.svg"
+                alt=""
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 hover:bg-gray-100 transition"
+            >
+              <img
+                src="./assets/icons/terrace.svg"
+                alt=""
+                class="w-5 h-5 object-contain"
+              />
+              <span class="ml-6 text-gray-600 text-sm">Terrace</span>
+            </a>
+          </div>
+        </div>
+        <!-- navbar Links -->
+        <div class="flex items-center justify-between flex-grow pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a
+              href="./index.html"
+              class="text-gray-200 hover:text-white hover:font-semibold transition"
+              >Home</a
+            >
+            <a
+              href="./shop.html"
+              class="text-gray-200 hover:text-white hover:font-semibold transition"
+              >Shop</a
+            >
+            <a
+              href="#"
+              class="text-gray-200 hover:text-white hover:font-semibold transition"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="text-gray-200 hover:text-white hover:font-semibold transition"
+              >Contact Us</a
+            >
+          </div>
+          <a
+            href="#"
+            class="text-gray-200 hover:text-white hover:font-semibold transition"
+            >Login/Sign up</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+
+    <!-- bredcrumps start -->
+    <div class="container py-4 flex items-center gap-3">
+      <a href="./index.html" class="text-primary text-base">
+        <i class="fas fa-home"></i>
+      </a>
+      <span class="text-sm text-gray-400">
+        <i class="fas fa-chevron-right"></i>
+      </span>
+      <p class="text-gray-600 font-medium">Shop</p>
+    </div>
+    <!-- bredcrumps end -->
+
+    <!-- Shop Page Wrapper -->
+    <div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+      <!-- sidebar start -->
+      <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+        <div class="divide-y divide-gray-200 space-y-5">
+          <!-- category filter -->
+          <div>
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              Categories
+            </h3>
+            <div class="space-y-2">
+              <!-- Single category start -->
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="bedroom"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="bedroom" class="text-gray-600 ml-3 cursor-pointer"
+                  >Bedroom</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(15)</div>
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="sofa"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="sofa" class="text-gray-600 ml-3 cursor-pointer"
+                  >Sofa</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(25)</div>
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="office"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="office" class="text-gray-600 ml-3 cursor-pointer"
+                  >Office</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(18)</div>
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="outdoor"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="outdoor" class="text-gray-600 ml-3 cursor-pointer"
+                  >Outdoor</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(20)</div>
+              </div>
+              <!-- Single category end -->
+            </div>
+          </div>
+          <!-- category filter end -->
+
+          <!-- Brands filter -->
+          <div class="pt-4">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">
+              Brands
+            </h3>
+            <div class="space-y-2">
+              <!-- Single category start -->
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="daminik"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="daminik" class="text-gray-600 ml-3 cursor-pointer"
+                  >Daminik</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(18)</div>
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="kari"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="kari" class="text-gray-600 ml-3 cursor-pointer"
+                  >Kari</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(20)</div>
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="mixing"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="mixing" class="text-gray-600 ml-3 cursor-pointer"
+                  >Mixing</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(08)</div>
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="ernest"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label for="ernest" class="text-gray-600 ml-3 cursor-pointer"
+                  >Ernest</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(09)</div>
+              </div>
+              <!-- Single category end -->
+            </div>
+          </div>
+          <!-- Brands filter end -->
+        </div>
+      </div>
+      <!-- sidebar end -->
+    </div>
+    <!-- Shop Page Wrapper end -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+      <div class="container grid grid-cols-3">
+        <!-- Footer Text -->
+        <div class="col-span-1 space-y-8">
+          <img src="./assets/logo.svg" alt="Logo" class="w-30" />
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-gray-500"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-gray-500"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-gray-500"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-gray-500"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Footer Links -->
+        <div class="col-span-2 grid grid-cols-2 gap-8">
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Solutions
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Marketing</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Analytics</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Commerce</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Insights</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Support
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Pricing</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Documentation</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Guide</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >API Status</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Company
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >About</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Blog</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Jobs</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Press</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Legal
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Claim</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Privacy</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Policy</a
+                >
+                <a
+                  href="#"
+                  class="text-base text-gray-500 hover:text-gray-900 block"
+                  >Terms & Conditions</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Links end -->
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <!-- copyright section -->
+    <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">@ Shabbir - All Rights Reserved</p>
+        <div>
+          <img src="./assets/methods.png" class="h-5" alt="Methods" />
+        </div>
+      </div>
+    </div>
+    <!-- copyright section end -->
+  </body>
+</html>
